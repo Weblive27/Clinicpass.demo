@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<title>ClinicPass — Tama Wilson</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap');
+  :root{
+    --paper:#F6F3EC; --ink:#1C2A27; --ink-soft:#4A5A56;
+    --teal:#2B6F63; --teal-deep:#1E4F46; --teal-tint:#E4ECE9; --line:#DDD7C7;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans',sans-serif;
+    display:flex;justify-content:center;padding:40px 20px;}
+  .wrap{max-width:420px;width:100%;}
+  .brand{font-family:'Fraunces',serif;font-weight:600;font-size:1.3rem;margin-bottom:4px;}
+  .demo-note{background:var(--teal-tint);border-left:3px solid var(--teal);border-radius:3px;
+    padding:10px 14px;font-size:0.82rem;color:var(--ink);margin-bottom:22px;}
+  .result-card{background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;}
+  .result-head{background:var(--teal-tint);padding:16px 20px;}
+  .result-head h1{font-family:'Fraunces',serif;font-size:1.3rem;margin:0;font-weight:500;}
+  .status-tag{display:inline-block;margin-top:6px;font-size:0.75rem;font-family:'IBM Plex Mono',monospace;
+    padding:3px 9px;border-radius:3px;background:var(--teal);color:#fff;}
+  dl{padding:18px 20px;margin:0;display:grid;grid-template-columns:130px 1fr;row-gap:12px;font-size:0.92rem;}
+  dt{color:var(--ink-soft);}
+  dd{margin:0;font-weight:500;}
+  .footer-note{margin-top:20px;font-size:0.78rem;color:var(--ink-soft);text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">ClinicPass</div>
+  <div class="demo-note">This is a demo lookup page for testing scans — no real patient data is stored here, and this isn't connected to any medical records system.</div>
+  <div class="result-card">
+    <div class="result-head">
+      <h1>Tama Wilson</h1>
+      <span class="status-tag">Active — CP-3Y7Q1E4</span>
+    </div>
+    <dl>
+      <dt>Date of birth</dt><dd>21/09/2015</dd>
+      <dt>Address</dt><dd>22 Ivory Street, Rangiora</dd>
+      <dt>Phone</dt><dd>027 412 5590</dd>
+      <dt>Emergency contact</dt><dd>Aroha Wilson — 027 412 5590</dd>
+      <dt>NHI (linked)</dt><dd>••• F9H2</dd>
+    </dl>
+  </div>
+  <p class="footer-note">Scanned via ClinicPass lookup — demo environment</p>
+</div>
+</body>
+</html>
